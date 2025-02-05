@@ -115,3 +115,13 @@ if __name__ == "__main__":
         """Check IP against blacklist"""
         blacklist = {"192.168.1.100", "10.0.0.99"}  # Example IPs
         return ip in blacklist
+    def check_malware_signatures(self, packet):
+        """Check packet against known malware signatures"""
+        signatures = {
+            b"malware_pattern": "Malware Type A",
+            b"exploit_pattern": "Exploit Type B"
+        }
+        payload = raw(packet)
+        for pattern, name in signatures.items():
+            if pattern in payload:
+                self.alert("Malware", f"{name} detected")
