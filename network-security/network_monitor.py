@@ -104,3 +104,10 @@ if __name__ == "__main__":
             "threats": list(self.suspicious_ips)
         }
         return report
+    def classify_packet(self, packet):
+        """Classify packet type and protocol"""
+        if TCP in packet:
+            return f"TCP:{packet[TCP].dport}"
+        elif UDP in packet:
+            return f"UDP:{packet[UDP].dport}"
+        return "Other"
