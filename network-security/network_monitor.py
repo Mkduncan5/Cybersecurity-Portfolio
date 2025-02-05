@@ -125,3 +125,8 @@ if __name__ == "__main__":
         for pattern, name in signatures.items():
             if pattern in payload:
                 self.alert("Malware", f"{name} detected")
+    def monitor_bandwidth(self, packet):
+        """Monitor bandwidth usage"""
+        size = len(packet)
+        if size > 1500:
+            self.alert("Bandwidth", f"Large packet: {size} bytes")
