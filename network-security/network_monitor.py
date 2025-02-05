@@ -83,3 +83,11 @@ if __name__ == "__main__":
         alert_msg = f"ALERT [{alert_type}]: {details}"
         print(alert_msg)
         logging.warning(alert_msg)
+    def check_port_sequence(self, ip):
+        """Detect sequential port scanning"""
+        ports = sorted(list(self.port_scan_tracking[ip]["ports"]))
+        sequences = 0
+        for i in range(len(ports)-1):
+            if ports[i+1] - ports[i] == 1:
+                sequences += 1
+        return sequences > 5
