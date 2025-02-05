@@ -20,7 +20,8 @@ Description: Created detection rules for brute-force login attempts and suspicio
 ✅ Cryptography
 📬 Contact
 📧 Email: mkdun27@gmail.com
-🔗 LinkedIn: [Your LinkedIn URL]
+[LinkedIn](https://www.linkedin.com/in/melissa-duncan-118a50293)
+
 📂 GitHub: [Your GitHub Profile URL]# Cybersecurity-Portfolio
 ## Certifications
 
