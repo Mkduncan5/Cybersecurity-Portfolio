@@ -78,3 +78,8 @@ if __name__ == "__main__":
     def handle_error(self, error_msg):
         logging.error(f"Error: {error_msg}")
         sys.exit(1)
+    def alert(self, alert_type, details):
+        """Send real-time alerts"""
+        alert_msg = f"ALERT [{alert_type}]: {details}"
+        print(alert_msg)
+        logging.warning(alert_msg)
