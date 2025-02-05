@@ -111,3 +111,7 @@ if __name__ == "__main__":
         elif UDP in packet:
             return f"UDP:{packet[UDP].dport}"
         return "Other"
+    def check_blacklist(self, ip):
+        """Check IP against blacklist"""
+        blacklist = {"192.168.1.100", "10.0.0.99"}  # Example IPs
+        return ip in blacklist
