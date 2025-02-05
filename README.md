@@ -40,3 +40,4 @@ Description: Created detection rules for brute-force login attempts and suspicio
 - **Cisco Certified DevNet Associate**
   - **Date Obtained**: September 2024
   - **Verification Link**: [View Certification](https://www.credly.com/badges/ee591068-78d1-473d-a55a-795ca4597edc/public_url)
+
