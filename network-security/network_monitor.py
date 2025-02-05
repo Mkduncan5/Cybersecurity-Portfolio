@@ -91,3 +91,8 @@ if __name__ == "__main__":
             if ports[i+1] - ports[i] == 1:
                 sequences += 1
         return sequences > 5
+    def monitor_traffic_patterns(self):
+        """Monitor traffic for anomalies"""
+        for ip in self.packet_counts:
+            if self.packet_counts[ip] > 1000:
+                self.alert("High Traffic", f"IP {ip} sent {self.packet_counts[ip]} packets")
