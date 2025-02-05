@@ -75,3 +75,6 @@ def main():
 
 if __name__ == "__main__":
    main()
+    def handle_error(self, error_msg):
+        logging.error(f"Error: {error_msg}")
+        sys.exit(1)
