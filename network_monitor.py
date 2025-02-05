@@ -76,3 +76,12 @@ class NetworkMonitor:
             
         logging.info(f"Packet: {src_ip} -> {dst_ip}")
 
+
+    def alert(self, alert_type, details):
+        """Send security alerts"""
+        alert_msg = f"ALERT: {alert_type} - {details}"
+        logging.warning(alert_msg)
+        
+        # Could add email/SMS alerts here
+        print(alert_msg)
+
