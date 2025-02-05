@@ -50,3 +50,29 @@ class NetworkMonitor:
         self.suspicious_ips = set()
         self.port_scan_tracking = {}  # Add this line
 
+
+    def apply_packet_filter(self, packet):
+        """Filter packets for monitoring"""
+        if IP not in packet:
+            return False
+        
+        if packet[IP].proto not in [6, 17]:  # TCP or UDP
+            return False
+            
+        return True
+
+
+    def packet_callback(self, packet):
+        if not self.apply_packet_filter(packet):
+            return
+            
+        src_ip = packet[IP].src
+        dst_ip = packet[IP].dst
+        self.packet_counts[src_ip] += 1
+            
+        if TCP in packet:
+            self.detect_port_scan(src_ip, packet[TCP].dport)
+            self.detect_syn_flood(packet)
+            
+        logging.info(f"Packet: {src_ip} -> {dst_ip}")
+
