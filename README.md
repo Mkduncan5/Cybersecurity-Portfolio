@@ -22,3 +22,8 @@ Description: Created detection rules for brute-force login attempts and suspicio
 📧 Email: mkdun27@gmail.com
 🔗 LinkedIn: [Your LinkedIn URL]
 📂 GitHub: [Your GitHub Profile URL]# Cybersecurity-Portfolio
+## Certifications
+
+- **Cisco Certified Network Associate (CCNA)**
+  - **Date Obtained**: January 2024
+  - **Verification Link**: [View Certification](https://www.credly.com/badges/89827af1-a1a3-4072-a85f-3870d0deb8bb/public_url)
