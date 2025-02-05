@@ -27,3 +27,16 @@ Description: Created detection rules for brute-force login attempts and suspicio
 - **Cisco Certified Network Associate (CCNA)**
   - **Date Obtained**: January 2024
   - **Verification Link**: [View Certification](https://www.credly.com/badges/89827af1-a1a3-4072-a85f-3870d0deb8bb/public_url)
+## Certifications
+
+- **Cisco Certified Network Associate (CCNA)**
+  - **Date Obtained**: January 2024
+  - **Verification Link**: [View Certification](https://www.credly.com/badges/89827af1-a1a3-4072-a85f-3870d0deb8bb/public_url)
+
+- **Cisco CyberOps Associate**
+  - **Date Obtained**: August 2024
+  - **Verification Link**: [View Certification](https://www.credly.com/badges/c8137472-aa96-41f6-a611-e259079aeac8/public_url)
+
+- **Cisco Certified DevNet Associate**
+  - **Date Obtained**: September 2024
+  - **Verification Link**: [View Certification](https://www.credly.com/badges/ee591068-78d1-473d-a55a-795ca4597edc/public_url)
