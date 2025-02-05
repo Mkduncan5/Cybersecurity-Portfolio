@@ -96,3 +96,11 @@ if __name__ == "__main__":
         for ip in self.packet_counts:
             if self.packet_counts[ip] > 1000:
                 self.alert("High Traffic", f"IP {ip} sent {self.packet_counts[ip]} packets")
+    def generate_report(self):
+        """Generate security report"""
+        report = {
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "stats": self.track_statistics(),
+            "threats": list(self.suspicious_ips)
+        }
+        return report
