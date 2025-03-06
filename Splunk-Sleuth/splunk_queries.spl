@@ -1,0 +1,8 @@
+# Find failed SSH login attempts
+index=security sourcetype="linux_secure" "Failed password"
+
+# Count failed login attempts per IP
+index=security sourcetype="linux_secure" "Failed password" | stats count by src_ip
+
+# Find successful logins
+index=security sourcetype="linux_secure" "Accepted password"
